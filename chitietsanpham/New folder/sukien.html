@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sk.css">
+    
+</head>
+<body>
+    <div id="main">  
+        <div id="header">
+            <ul id="nav">               
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Nạp Sò</a></li>
+                <li><a href="">Dowload</a></li>
+                <li>
+                    <div class="search">
+                        <input type="text">
+                        <button type="submit">Search</button>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div id="slide_content">
+            <div id="slider">
+                <ul>
+                    <li><a href="#">Cửa hàng tiện lợi</a></li>
+                    <li><a href="#">Sự kiện nạp thẻ</a></li>
+                    <li><a href="#">Sản phẩm mới</a></li>
+                    <li><a href="#">Sự Kiện hàng đầu</a></li>
+                    <li><a href="#">Mã giảm giá $$$</a></li>
+                </ul>           
+            </div>
+
+            <div id="content">    
+                <div id="icon_slider">
+                    <a href="" class="icon">Facebook</a>
+                    <a href="" class="icon">Zalo</a>
+                    <a href="" class="icon">Twitter</a>
+                    <a href="" class="icon">Add</a>
+                </div>   
+                
+                <div id="sanpham">
+                    <div class="anh">
+                        
+<h1 style="text-align:center">SỰ KIỆN BỐN MÙA</h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/1.png" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/2.png" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/3.png" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/4.png" >
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/5.png" >
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/6.png" >
+  </div>
+  
+  
+
+  <div class="row" style="display:flex ">
+    <div class="column" >
+      <img class="demo cursor" src="img/1.png" style="width:80px;height: 120px;" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/2.png" style="width:80px;height: 120px;" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/3.png" style="width:80px;height: 120px;" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/4.png" style="width:80px;height: 120px;" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/5.png" style="width:80px;height: 120px;" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/6.png" style="width:80px;height: 120px;" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+                    </div>
+
+                    <div class="thongtinsp">
+                      <h2 style="color: rgb(99, 180, 223);">SỰ KIỆN BỐN MÙA</h2>
+                      <h3>Giá gốc: <em style="color: red;text-decoration:line-through red solid">1.350.000<sup>đ</sup></em></h3>
+                      <h1>Sale chỉ còn: <em style="color: red;">700.000<sup>đ</sup></em></h1>
+                      <h3>GÓI:</h3>
+                      <div class="goi" style="display: flex;">
+                        <div class="goi"><button style="width:20px ;">1</button></div>
+                        <div class="goi"><button style="width:20px ;">2</button></div>
+                        <div class="goi"><button style="width:20px ;">3</button></div>
+                        <div class="goi"><button style="width:20px ;">4</button></div>
+                        <div class="goi"><button style="width:20px ;">5</button></div>
+                        <div class="goi"><button style="width:20px ;">6</button></div>
+                      </div>
+                     
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="btn" style="display: flex ;">
+                        <a href="#"><div class="btns">Thêm vào giỏ hàng</div></a>
+                        <a href="#"><div class="btns">Đặt mua ngay</div></a>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer">   
+            <h4>Contact </h4>
+            <h4>    Email: tuananhr15v3@gmail.com</h4>
+            <h4>    Phone: 038279189</h4>
+            <h4>Infor: This product was create by Tuấn Anh</h4>
+
+        </div>
+    </div>
+  
+</body>
+</html>

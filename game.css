@@ -1,0 +1,247 @@
+
+body{
+    background-image: url('img/hinhbackgroa.jpg');
+    background-size: contain;
+    Overflow-x:hidden;
+    background-position-y: -100;
+}
+
+.container{
+max-width: 960px ;
+margin: opx auto ;
+}
+
+#header{
+    background-color: black;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 10px 10px ;
+
+}
+#logo img{
+max-width: 200px ;
+height:auto;
+}
+
+#main-menu{
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 ;
+}
+#main-menu li{
+    position:relative;
+}
+#main-menu li a{
+    color:aliceblue;
+    display:block;
+    padding: 18px 20px ;
+    text-decoration: none ;
+}
+#main-menu ul.sub-menu{
+    position:absolute;
+    background-color: black;
+    padding:15px 0px;
+    list-style: none ;
+    width:200px;
+    border: 1px solid #434343;
+    display: none ;
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px ;
+    border-bottom: 1px solid #333 ;
+}
+
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid rgb(127, 126, 126) ;
+ 
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;   
+}
+/* thiết lập border khi hover */
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content:"";
+    height: 4px;
+    width: 100% ;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: none;
+    transition: 0,25s  cubic-bezier(0.075, 0.82, 0.165, 1)
+
+}
+#main-menu>li:hover>a::before{
+    display: block;
+}
+
+#article {
+    text-align: center;
+    padding: 25px;
+    color:aqua;
+    font-size: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-position-y: -100%;
+    background-size: cover;
+}  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.75s;
+  }
+  
+  .slide img{
+    width: 1500px;
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 1400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #abbdbe;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1400px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #769091;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #a9b4b5;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #95a6a7;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #7e9091;
+  }
+.wrapper {
+    max-width: 1070px;
+    margin:0 auto;
+
+}
+ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+ul.products li {
+    flex-basis: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+ul.products li img{
+max-width: 100%;
+height: auto;
+}
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a.product-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0
+}
+ul.products li .product-info a.product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.products li .product-info .product-price {
+    color: #111;
+    padding:2px 0px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
